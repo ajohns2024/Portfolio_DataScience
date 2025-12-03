@@ -1,9 +1,4 @@
-<!DOCTYPE HTML>
-<!--
-  Massively by HTML5 UP
-  html5up.net | @ajlkn
-  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE HTML> 
 <html>
   <head>
     <title>Intro to EDA Portfolio</title>
@@ -12,7 +7,7 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-    <!-- Color overrides: Navy, Baby Blue, White -->
+    <!-- Color overrides -->
     <style>
       :root{
         --navy:#001f3f;
@@ -24,289 +19,245 @@
       a{ color:var(--navy); }
       a:hover{ color:var(--baby-blue); }
 
-      /* Intro (keep layout, just restyle) */
       #intro{
         background:linear-gradient(135deg,var(--navy) 40%,var(--baby-blue) 100%);
         color:var(--white);
         text-align:center;
         padding:6em 2em;
       }
-      #intro h1{ color:var(--white); }
-      #intro p{ max-width:900px; margin:0 auto; line-height:1.6; }
       #intro img{
         width:200px; height:200px; border-radius:50%;
-        display:block; margin:20px auto;
         border:4px solid var(--baby-blue);
         box-shadow:0 4px 8px rgba(0,0,0,0.2);
+        margin:20px auto;
       }
-
-      /* Header / Nav */
-      #header .logo{ color:var(--navy); font-weight:700; }
-      #nav{ background:var(--navy); }
-      #nav a{ color:var(--white); }
-      #nav a:hover{ color:var(--baby-blue); }
 
       /* Cards */
       article.post.featured{
         background:var(--white);
         border-left:5px solid var(--baby-blue);
-        box-shadow:0 2px 6px rgba(0,0,0,0.08);
         border-radius:12px;
+        box-shadow:0 2px 6px rgba(0,0,0,0.08);
       }
       section.posts article{
         background:var(--white);
         border:1px solid var(--baby-blue);
         border-radius:10px;
-        transition:transform .2s ease, box-shadow .2s ease;
+        transition:0.2s ease;
       }
       section.posts article:hover{
         transform:translateY(-4px);
-        box-shadow:0 4px 10px rgba(0,0,0,0.08);
+        box-shadow:0 4px 10px rgba(0,0,0,0.1);
       }
 
-      /* Footer */
-      #footer{ background:var(--navy); color:var(--white); }
-      #footer a{ color:var(--baby-blue); }
-
-      /* Copyright bar */
-      #copyright{
-        background:var(--baby-blue);
-        color:var(--navy);
-      }
-
-      /* Buttons */
       .button{
         background:var(--navy);
-        color:var(--white) !important;
+        color:white !important;
         border:2px solid var(--baby-blue);
         border-radius:25px;
       }
       .button:hover{
         background:var(--baby-blue);
         color:var(--navy) !important;
-        border-color:var(--navy);
       }
     </style>
   </head>
+
   <body class="is-preload">
+    <div id="wrapper" class="fade-in">
 
-    <!-- Wrapper -->
-      <div id="wrapper" class="fade-in">
+      <!-- INTRO -->
+      <div id="intro">
+        <h1>Honors Introduction to Data Science<br/>Portfolio</h1>
 
-        <!-- Intro -->
-          <div id="intro">
-            <!-- removed extra space after <br /> like the template line shows -->
-            <h1>Honors Introduction to Data Science<br/>Portfolio</h1>
+        <img src="images/Headshot_ABJ.jpg" alt="Avery Bernard Johns Headshot">
 
-            <!-- Headshot placed where your professor’s template would expect it -->
-            <img src="images/Headshot_ABJ.jpg" alt="Avery Bernard Johns Headshot" />
+        <p>
+          <strong>Avery Bernard Johns</strong> is a <strong>Sophomore</strong> 
+          History and Sociology double major with a <strong>Data Science minor</strong> 
+          at Howard University, and a member of the 
+          <strong>Humanities and Social Sciences Scholars Pathway-to-PhD Program</strong>.
+          Avery's academic and professional goals include pursuing a 
+          <strong>dual JD–PhD in Forensic Anthropology</strong> and building
+          accessible public-facing data tools that analyze structural inequality.
+          <br><br>
+          This portfolio highlights Avery’s EDA work, showcasing global housing trends, 
+          Census-based insights, and visual storytelling with data.
+        </p>
 
-            <!-- Your bio -->
+        <ul class="actions">
+          <li><a href="#main" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+        </ul>
+      </div>
+
+      <!-- HEADER -->
+      <header id="header">
+        <a href="index.html" class="logo">Intro to EDA Portfolio</a>
+      </header>
+
+      <!-- NAV -->
+      <nav id="nav">
+        <ul class="links">
+          <li class="active"><a href="index.html">Portfolio Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+        <ul class="icons">
+          <li><a href="https://github.com/ajohns2024" class="icon brands fa-github"></a></li>
+        </ul>
+      </nav>
+
+      <!-- MAIN -->
+      <div id="main">
+
+        <!-- FEATURED GLOBAL HOUSING PROJECT -->
+        <article class="post featured">
+          <header class="major">
+            <span class="date">Fall 2025</span>
+            <h2>
+              <a href="https://ajohns2024.github.io/EDA_Global_Housing/" target="_blank">
+                Global Housing Market EDA
+              </a>
+            </h2>
             <p>
-              <strong>Avery Bernard Johns</strong> is a <strong>Sophomore</strong> Undergraduate
-              <strong>History and Sociology Double Major</strong> with a <strong>Data Science Minor</strong>,
-              and a member of the <strong>Howard University Humanities and Social Sciences Scholars Program</strong>
-              (Pathway to PhD). Bernard Johns intends to pursue a <strong>dual JD–PhD in Forensic Anthropology</strong>
-              following undergraduate studies at Howard University.
+              This final project analyzes worldwide housing price indices, mortgage rates, 
+              and affordability trends from 2010–2020. The project includes animated bar charts,
+              time-series visualizations, and a global choropleth map designed to illustrate
+              how national housing markets change over time.
+              <br><br>
+              The goal is to translate complex datasets into intuitive visual summaries that 
+              highlight inequality, volatility, and long-term housing patterns.
             </p>
-
-            <ul class="actions">
-              <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-            </ul>
-          </div>
-
-        <!-- Header -->
-          <header id="header">
-            <a href="index.html" class="logo">Massively</a>
           </header>
 
-        <!-- Nav -->
-          <nav id="nav">
-            <ul class="links">
-              <li class="active"><a href="index.html">This is Massively</a></li>
-              <li><a href="generic.html">Generic Page</a></li>
-              <li><a href="elements.html">Elements Reference</a></li>
+          <!-- FREE STOCK IMAGE -->
+          <a href="https://ajohns2024.github.io/EDA_Global_Housing/" target="_blank" class="image main">
+            <img src="https://images.unsplash.com/photo-1581091012184-5c7c1e53a16f?q=80&w=2100" 
+                 alt="Global housing data dashboard">
+          </a>
+
+          <ul class="actions special">
+            <li><a href="https://ajohns2024.github.io/EDA_Global_Housing/" 
+                   target="_blank" class="button large">View Global Housing Project</a></li>
+          </ul>
+        </article>
+
+        <!-- PROJECTS SECTION -->
+        <section class="posts" id="projects">
+
+          <!-- DC CENSUS PORTFOLIO -->
+          <article>
+            <header>
+              <span class="date">Fall 2025</span>
+              <h2>
+                <a href="https://ajohns2024.github.io/DC_Census_Portfolio_github.io/" target="_blank">
+                  DC Census Portfolio
+                </a>
+              </h2>
+            </header>
+
+            <a href="https://ajohns2024.github.io/DC_Census_Portfolio_github.io/" 
+               target="_blank" class="image fit">
+              <!-- STOCK MAP/DATA IMAGE -->
+              <img src="https://images.unsplash.com/photo-1531501410721-06f6212f3c4b?q=80&w=2100" 
+                   alt="DC Census data visualization dashboard">
+            </a>
+
+            <p>
+              The <strong>DC Census Portfolio</strong> is a course project analyzing
+              demographic, economic, and housing variables across Washington, D.C. neighborhoods
+              using publicly available Census data.
+              <br><br>
+              This project focuses on learning the fundamentals of 
+              <strong>data cleaning, summary statistics, exploratory visualization, 
+              and geographic breakdowns</strong>. Through plots, tables, and map-based graphics,
+              it translates raw Census numbers into accessible visual patterns that help 
+              readers understand how characteristics like age, income, and housing costs
+              vary across the District.
+              <br><br>
+              This assignment serves as a foundational exercise in working with real-world
+              public datasets and communicating insights clearly to non-technical audiences.
+            </p>
+
+            <ul class="actions special">
+              <li><a href="https://ajohns2024.github.io/DC_Census_Portfolio_github.io/" 
+                     target="_blank" class="button">View DC Census Portfolio</a></li>
             </ul>
-            <ul class="icons">
-              <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-              <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-              <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-              <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+          </article>
+
+          <!-- ABOUT PORTFOLIO -->
+          <article>
+            <header>
+              <h2><a href="#">About This Portfolio</a></h2>
+            </header>
+
+            <a href="#intro" class="image fit">
+              <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?q=80&w=2100" 
+                   alt="Data science tools screenshot">
+            </a>
+
+            <p>
+              This portfolio demonstrates Avery’s growth in data science through 
+              real-world datasets, reproducible workflows, and visually intuitive 
+              storytelling. Across each project, the emphasis is on:
+              <br><br>
+              • Turning <strong>messy data</strong> into structured insight<br>
+              • Using <strong>Python and Jupyter</strong> to build transparent analysis pipelines<br>
+              • Designing <strong>interactive and aesthetic visualizations</strong><br>
+              • Connecting data to meaningful social and spatial questions<br><br>
+              This portfolio reflects Avery’s commitment to rigorous analysis,
+              clarity in communication, and a multidisciplinary research approach.
+            </p>
+
+            <ul class="actions special">
+              <li><a href="#intro" class="button">Back to Top</a></li>
             </ul>
-          </nav>
+          </article>
 
-        <!-- Main -->
-          <div id="main">
-
-            <!-- Featured Post -->
-              <article class="post featured">
-                <header class="major">
-                  <span class="date">April 25, 2017</span>
-                  <h2><a href="#">And this is a<br /> massive headline</a></h2>
-                  <p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
-                  facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
-                  amet nullam sed etiam veroeros.</p>
-                </header>
-                <a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a>
-                <ul class="actions special">
-                  <li><a href="#" class="button large">Full Story</a></li>
-                </ul>
-              </article>
-
-            <!-- Posts -->
-              <section class="posts">
-                <article>
-                  <header>
-                    <span class="date">April 24, 2017</span>
-                    <h2><a href="#">Sed magna<br /> ipsum faucibus</a></h2>
-                  </header>
-                  <a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-                  <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-                  <ul class="actions special">
-                    <li><a href="#" class="button">Full Story</a></li>
-                  </ul>
-                </article>
-                <article>
-                  <header>
-                    <span class="date">April 22, 2017</span>
-                    <h2><a href="#">Primis eget<br /> imperdiet lorem</a></h2>
-                  </header>
-                  <a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-                  <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-                  <ul class="actions special">
-                    <li><a href="#" class="button">Full Story</a></li>
-                  </ul>
-                </article>
-                <article>
-                  <header>
-                    <span class="date">April 18, 2017</span>
-                    <h2><a href="#">Ante mattis<br /> interdum dolor</a></h2>
-                  </header>
-                  <a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-                  <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-                  <ul class="actions special">
-                    <li><a href="#" class="button">Full Story</a></li>
-                  </ul>
-                </article>
-                <article>
-                  <header>
-                    <span class="date">April 14, 2017</span>
-                    <h2><a href="#">Tempus sed<br /> nulla imperdiet</a></h2>
-                  </header>
-                  <a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-                  <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-                  <ul class="actions special">
-                    <li><a href="#" class="button">Full Story</a></li>
-                  </ul>
-                </article>
-                <article>
-                  <header>
-                    <span class="date">April 11, 2017</span>
-                    <h2><a href="#">Odio magna<br /> sed consectetur</a></h2>
-                  </header>
-                  <a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-                  <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-                  <ul class="actions special">
-                    <li><a href="#" class="button">Full Story</a></li>
-                  </ul>
-                </article>
-                <article>
-                  <header>
-                    <span class="date">April 7, 2017</span>
-                    <h2><a href="#">Augue lorem<br /> primis vestibulum</a></h2>
-                  </header>
-                  <a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-                  <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-                  <ul class="actions special">
-                    <li><a href="#" class="button">Full Story</a></li>
-                  </ul>
-                </article>
-              </section>
-
-            <!-- Footer -->
-              <footer>
-                <div class="pagination">
-                  <!--<a href="#" class="previous">Prev</a>-->
-                  <a href="#" class="page active">1</a>
-                  <a href="#" class="page">2</a>
-                  <a href="#" class="page">3</a>
-                  <span class="extra">&hellip;</span>
-                  <a href="#" class="page">8</a>
-                  <a href="#" class="page">9</a>
-                  <a href="#" class="page">10</a>
-                  <a href="#" class="next">Next</a>
-                </div>
-              </footer>
-
-          </div>
-
-        <!-- Footer -->
-          <footer id="footer">
-            <section>
-              <form method="post" action="#">
-                <div class="fields">
-                  <div class="field">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name" />
-                  </div>
-                  <div class="field">
-                    <label for="email">Email</label>
-                    <input type="text" name="email" id="email" />
-                  </div>
-                  <div class="field">
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" rows="3"></textarea>
-                  </div>
-                </div>
-                <ul class="actions">
-                  <li><input type="submit" value="Send Message" /></li>
-                </ul>
-              </form>
-            </section>
-            <section class="split contact">
-              <section class="alt">
-                <h3>Address</h3>
-                <p>1234 Somewhere Road #87257<br />
-                Nashville, TN 00000-0000</p>
-              </section>
-              <section>
-                <h3>Phone</h3>
-                <p><a href="#">(000) 000-0000</a></p>
-              </section>
-              <section>
-                <h3>Email</h3>
-                <p><a href="#">info@untitled.tld</a></p>
-              </section>
-              <section>
-                <h3>Social</h3>
-                <ul class="icons alt">
-                  <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-                  <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-                  <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-                  <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-                </ul>
-              </section>
-            </section>
-          </footer>
-
-        <!-- Copyright -->
-          <div id="copyright">
-            <ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-          </div>
+        </section>
 
       </div>
 
-    <!-- Scripts -->
-      <script src="assets/js/jquery.min.js"></script>
-      <script src="assets/js/jquery.scrollex.min.js"></script>
-      <script src="assets/js/jquery.scrolly.min.js"></script>
-      <script src="assets/js/browser.min.js"></script>
-      <script src="assets/js/breakpoints.min.js"></script>
-      <script src="assets/js/util.js"></script>
-      <script src="assets/js/main.js"></script>
+      <!-- FOOTER -->
+      <footer id="footer">
+        <section class="split contact">
+          <section class="alt">
+            <h3>Location</h3>
+            <p>Washington, D.C.</p>
+          </section>
+          <section>
+            <h3>Email</h3>
+            <p><a href="#">your.email@university.edu</a></p>
+          </section>
+          <section>
+            <h3>GitHub</h3>
+            <ul class="icons alt">
+              <li><a href="https://github.com/ajohns2024" class="icon brands alt fa-github"></a></li>
+            </ul>
+          </section>
+        </section>
+      </footer>
+
+      <div id="copyright">
+        <ul><li>&copy; Avery Bernard Johns</li></ul>
+      </div>
+
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
 
   </body>
 </html>
+
+
+
 
 
 
